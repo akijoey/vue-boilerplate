@@ -1,0 +1,30 @@
+{
+  "exclude": ["dist"],
+  "compilerOptions": {
+    /* Project Options */
+    "allowJs": true,
+    "declaration": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "target": "ES2019",
+    "outDir": "lib",
+    /* Strict Checks */
+    "strict": true,
+    /* Module Resolution */
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["@akijoey/react-scripts"],
+    /* Experimental */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    /* Advanced */
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  }
+}
