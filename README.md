@@ -13,4 +13,4 @@ A starter template for vue with typescript.
 [MIT][license-url] © AkiJoey
 
 [license-image]: https://img.shields.io/github/license/akijoey/vue-boilerplate
-[license-url]: https://github.com/akijoey/vue-boilerplate/blob/master/LICENSE
+[license-url]: https://github.com/akijoey/vue-boilerplate/blob/main/LICENSE

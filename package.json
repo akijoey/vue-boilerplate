@@ -2,51 +2,22 @@
   "name": "vue-boilerplate",
   "version": "1.0.0",
   "description": "A starter template for vue with typescript.",
-  "scripts": {
-    "start": "vue-scripts start",
-    "build": "vue-scripts build",
-    "lint:script": "eslint --ignore-path .gitignore .",
-    "lint:style": "stylelint -i .gitignore **/*.{scss,sass,css}",
-    "lint": "npm run lint:script && npm run lint:style",
-    "test": "npm run lint",
-    "format": "prettier -w ."
-  },
   "author": "AkiJoey <akijoey@akijoey.com> (https://akijoey.com)",
   "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webapp start",
+    "build": "webapp build",
+    "lint": "devkit lint",
+    "test": "devkit test",
+    "format": "devkit format",
+    "prepare": "devkit prepare"
+  },
   "dependencies": {
-    "@akijoey/vue-scripts": "latest",
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@akijoey/eslint-config": "latest",
-    "@akijoey/prettier-config": "latest",
-    "@akijoey/stylelint-config": "latest",
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.9.0",
-    "eslint": "^7.14.0",
-    "eslint-config-standard-with-typescript": "^19.0.1",
-    "eslint-plugin-vue": "^7.11.1",
-    "eslint-plugin-standard": "^5.0.0",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.5.2",
-    "prettier": "^2.2.1",
-    "stylelint": "^13.8.0",
-    "stylelint-scss": "^3.18.0"
-  },
-  "prettier": "@akijoey/prettier-config",
-  "commitlint": {
-    "extends": "@commitlint/config-conventional"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js}": "eslint --fix",
-    "*.{scss,sass,css}": "stylelint --fix",
-    "*.{ts,tsx,js,scss,sass,css,html,json,md}": "prettier -w"
+    "@akijoey/devkit": "latest",
+    "@akijoey/webapp": "latest"
   }
 }
